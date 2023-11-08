@@ -10,10 +10,10 @@ function quantitatTotalPagar($temps, $tempsEstabliment = 3, $tasa1 = 0.10, $tasa
     $tempsMin = ceil($temps / 60);
 
     if($tempsMin <= $tempsEstabliment) {
-        echo "El cost de la trucada es de: " . $tasa1 . "€<br/>";
+        echo "El cost de la trucada de $temps segons es de: " . $tasa1 . "€<br/>";
     }elseif($tempsMin > $tempsEstabliment) {
         $pasos = $tempsMin - $tempsEstabliment;
-        echo "El cost de la trucada es de: " . ($pasos * $tasa2 + $tasa1) . "€<br/>";
+        echo "El cost de la trucada de $temps segons es de: " . ($pasos * $tasa2 + $tasa1) . "€<br/>";
     }
 }
 
